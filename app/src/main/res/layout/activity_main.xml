@@ -18,40 +18,16 @@
         app:menu="@menu/bottom_menu"
         tools:layout_editor_absoluteX="1dp"/>
 
-    <LinearLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="10dp"
-            android:layout_height="match_parent">
-        </LinearLayout>
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/logo"
-            android:layout_gravity="center"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="search"
-            android:textSize="40sp" />
-
-    </LinearLayout>
 
     <FrameLayout
         android:id="@+id/main_frame"
         android:layout_width="411dp"
-        android:layout_height="612dp"
+        android:layout_height="681dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.4">
 
     </FrameLayout>
