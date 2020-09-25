@@ -54,7 +54,7 @@
             android:background="#ffb0b0"
             android:layout_margin="5dp"
             android:text="편안, 다산, 풍요"
-            android:textSize="60sp"
+            android:textSize="55sp"
             android:textColor="#000000"/>
 
         <ScrollView
@@ -65,7 +65,7 @@
                 android:layout_height="150dp"
                 android:layout_margin="10dp"
                 android:text="둥글고 넓은 접시 모양의 꽃으로, 여름에 핀다."
-                android:textSize="40sp"
+                android:textSize="30sp"
                 android:textColor="#000000"/>
         </ScrollView>
 
