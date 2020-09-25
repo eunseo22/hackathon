@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="25dp"
-    android:layout_marginBottom="30dp"
     android:orientation="vertical">
 
     <LinearLayout
@@ -33,61 +34,78 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:background="#FFEB3B"
-        android:orientation="vertical">
-        
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="   9월 이달의 꽃말"
-            android:textSize="30sp"
-            android:textColor="#000000"
-            android:gravity="left"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="나를 생각해요  "
-            android:textSize="55sp"
-            android:textColor="#000000"
-            android:gravity="right"/>
+        android:layout_height="wrap_content">
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:orientation="vertical"
-        android:background="#F6EEA2">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:gravity="center"
-            android:text="추석에 선물하기 좋은 메시지"
-            android:textSize="30sp"
-            android:textColor="#000000"/>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="130dp"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:background="@drawable/september"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/bigdasan"/>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/bigdasan"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="130dp"
-                android:src="@drawable/image0"/>
+                android:background="#FFEB3B"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="   9월 이달의 꽃말"
+                    android:textSize="30sp"
+                    android:textColor="#000000"
+                    android:gravity="left"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="나를 생각해요  "
+                    android:textSize="55sp"
+                    android:textColor="#000000"
+                    android:gravity="right"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical"
+                android:background="#F6EEA2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:text="추석에 선물하기 좋은 메시지"
+                    android:textSize="30sp"
+                    android:textColor="#000000"/>
+
+
+            </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#FFEB3B">
-    </LinearLayout>
-
-
+    </ScrollView>
 
 </LinearLayout>
