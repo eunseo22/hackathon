@@ -9,15 +9,16 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class Frag_home extends Fragment {
+public class Frag_home extends Fragment{
 
-    private View view;
+    public Frag_home(){
+
+    }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.frag_home, container, false);
-
-        return view;
+        return inflater.inflate(R.layout.frag_home, container, false);
     }
 }
+

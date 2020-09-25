@@ -1,71 +1,56 @@
 package com.example.hackathon;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
-import android.view.MenuItem;
-
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private BottomNavigationView bottomNavigationView;
-    private FragmentManager fm;
-    private FragmentTransaction ft;
-    private Frag_home frag_home;
-    private Frag_cate frag_cate;
-    private Frag_bag frag_bag;
+    Button btn_home, btn_cate, btn_bag;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        bottomNavigationView = findViewById(R.id.bottom_navi);
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        btn_home = (Button)findViewById(R.id.btn_home);
+        btn_cate = (Button)findViewById(R.id.btn_cate);
+        btn_bag = (Button)findViewById(R.id.btn_bag);
+
+        btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch(menuItem.getItemId()){
-                    case R.id.action_home:
-                        setFrag(0);
-                        break;
-                    case R.id.action_cate:
-                        setFrag(1);
-                        break;
-                    case R.id.action_bag:
-                        setFrag(2);
-                        break;
-                }
-                return true;
+            public void onClick(View v) {
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                Frag_home frag_home = new Frag_home();
+                transaction.replace(R.id.frame, frag_home);
+                transaction.commit();
             }
         });
-        frag_home = new Frag_home();
-        frag_cate = new Frag_cate();
-        frag_bag = new Frag_bag();
-        setFrag(0); //첫 프래그먼트 화면 지정
 
+        btn_cate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                Frag_cate frag_cate = new Frag_cate();
+                transaction.replace(R.id.frame, frag_cate);
+                transaction.commit();
+            }
+        });
+
+        btn_bag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                Frag_bag frag_bag = new Frag_bag();
+                transaction.replace(R.id.frame, frag_bag);
+                transaction.commit();
+            }
+        });
 
     }
-    //프래그먼트 교체
-    private void setFrag(int n){
-        fm = getSupportFragmentManager();
-        ft = fm.beginTransaction();
-        switch(n){
-            case 0:
-                ft.replace(R.id.main_frame, frag_home);
-                ft.commit();
-                break;
-            case 1:
-                ft.replace(R.id.main_frame, frag_cate);
-                ft.commit();
-                break;
-            case 2:
-                ft.replace(R.id.main_frame, frag_bag);
-                ft.commit();
-                break;
-        }
-    }
+
 }

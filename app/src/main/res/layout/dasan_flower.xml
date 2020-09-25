@@ -2,6 +2,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/frag_dasan_flower"
     android:orientation="vertical">
 
     <LinearLayout
@@ -38,11 +39,35 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="#ffe2e2">
 
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"/>
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/dasan_flower"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:background="#ffb0b0"
+            android:layout_margin="5dp"
+            android:text="편안, 다산, 풍요"
+            android:textSize="60sp"
+            android:textColor="#000000"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:text="둥글고 넓은 접시 모양의 꽃으로, 여름에 핀다."
+                android:textSize="40sp"
+                android:textColor="#000000"/>
+        </ScrollView>
 
     </LinearLayout>
 
