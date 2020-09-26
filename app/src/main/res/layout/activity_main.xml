@@ -33,21 +33,21 @@
 
             <Button
                 android:id="@+id/btn_home"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:layout_marginRight="90dp"
-                android:background="@drawable/home"/>
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="78dp"
+                android:background="@drawable/home_flat"/>
             <Button
                 android:id="@+id/btn_cate"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:background="@drawable/cate"/>
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/cate_flat"/>
             <Button
                 android:id="@+id/btn_bag"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:layout_marginLeft="90dp"
-                android:background="@drawable/bag"/>
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="78dp"
+                android:background="@drawable/basket_flat"/>
 
         </LinearLayout>
         

@@ -11,8 +11,8 @@ import androidx.fragment.app.Fragment;
 
 public class Frag_cate extends Fragment {
 
-    public Frag_cate(){
-
+    public static Frag_cate newInstance(){
+        return new Frag_cate();
     }
 
     @Nullable

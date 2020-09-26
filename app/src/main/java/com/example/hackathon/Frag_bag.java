@@ -11,8 +11,8 @@ import androidx.fragment.app.Fragment;
 
 public class Frag_bag extends Fragment {
 
-    public Frag_bag(){
-
+    public static Frag_bag newInstance(){
+        return new Frag_bag();
     }
 
     @Nullable
