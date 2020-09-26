@@ -1,5 +1,6 @@
 package com.example.hackathon;
 
+import android.os.Binder;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,11 +22,18 @@ public class Category extends Fragment{
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.category, container, false);
         Button btn_cate_love = (Button)view.findViewById(R.id.btn_cate_love);
+        Button btn_cate_thanks = (Button)view.findViewById(R.id.btn_cate_thanks);
 
         btn_cate_love.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ((MainActivity)getActivity()).replaceFragment(Cate_love.newInstance());
+            }
+        });
+        btn_cate_thanks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((MainActivity)getActivity()).replaceFragment(Cate_thanks.newInstance());
             }
         });
 

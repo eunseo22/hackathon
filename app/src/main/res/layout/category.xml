@@ -51,6 +51,7 @@
                 android:layout_marginTop="175dp"
                 android:background="@drawable/cate_love" />
             <Button
+                android:id="@+id/btn_cate_thanks"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="175dp"
