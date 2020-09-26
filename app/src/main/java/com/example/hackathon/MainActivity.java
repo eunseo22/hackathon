@@ -14,10 +14,14 @@ public class MainActivity extends AppCompatActivity {
 
     Button btn_home, btn_cate, btn_bag;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.add(R.id.frame, Frag_home.newInstance()).commit();
 
         btn_home = (Button)findViewById(R.id.btn_home);
         btn_cate = (Button)findViewById(R.id.btn_cate);
@@ -27,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                Frag_home frag_home = new Frag_home();
-                transaction.replace(R.id.frame, frag_home);
+                Frag_home home = new Frag_home();
+                transaction.replace(R.id.frame, home);
                 transaction.commit();
             }
         });
@@ -37,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                Frag_cate frag_cate = new Frag_cate();
-                transaction.replace(R.id.frame, frag_cate);
+                Category category = new Category();
+                transaction.replace(R.id.frame, category);
                 transaction.commit();
             }
         });
@@ -47,13 +51,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                Frag_bag frag_bag = new Frag_bag();
-                transaction.replace(R.id.frame, frag_bag);
+                Frag_bag bag = new Frag_bag();
+                transaction.replace(R.id.frame, bag);
                 transaction.commit();
             }
         });
 
     }
+
+
+
     public void replaceFragment(Fragment fragment){
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
