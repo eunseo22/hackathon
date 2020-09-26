@@ -9,16 +9,16 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class Frag_bag extends Fragment {
+public class Cate_love_flower1 extends Fragment{
 
-    public static Frag_bag newInstance(){
-        return new Frag_bag();
+    public static Cate_love_flower1 newInstance(){
+        return new Cate_love_flower1();
+
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.bag, container, false);
-
+        return inflater.inflate(R.layout.cate_love_flower1, container, false);
     }
 }

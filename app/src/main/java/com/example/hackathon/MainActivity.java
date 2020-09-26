@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.add(R.id.frame, Frag_home.newInstance()).commit();
+        fragmentTransaction.add(R.id.frame, Home.newInstance()).commit();
 
         btn_home = (Button)findViewById(R.id.btn_home);
         btn_cate = (Button)findViewById(R.id.btn_cate);
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                Frag_home home = new Frag_home();
+                Home home = new Home();
                 transaction.replace(R.id.frame, home);
                 transaction.commit();
             }
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                Category category = new Category();
+                Cate category = new Cate();
                 transaction.replace(R.id.frame, category);
                 transaction.commit();
             }
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                Frag_bag bag = new Frag_bag();
+                Bag bag = new Bag();
                 transaction.replace(R.id.frame, bag);
                 transaction.commit();
             }

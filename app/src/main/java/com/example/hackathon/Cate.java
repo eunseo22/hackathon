@@ -1,6 +1,5 @@
 package com.example.hackathon;
 
-import android.os.Binder;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,10 +10,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class Category extends Fragment{
+public class Cate extends Fragment{
 
-    public static Category newInstands(){
-        return new Category();
+    public static Cate newInstands(){
+        return new Cate();
     }
 
     @Nullable
