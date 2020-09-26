@@ -34,42 +34,44 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical"
         android:layout_marginTop="50dp"
         android:background="#ffe2e2">
 
-        <ImageView
-            android:layout_width="350dp"
-            android:layout_height="350dp"
-            android:layout_margin="10dp"
-            android:src="@drawable/flower_dasan"/>
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="match_parent"
             android:gravity="center"
-            android:background="#ffb0b0"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:text="편안, 다산, 풍요"
-            android:textSize="55sp"
-            android:textColor="#000000"/>
+            android:orientation="vertical">
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_margin="30dp"
+                android:src="@drawable/flower_luvpra" />
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#ffb0b0"
+                android:gravity="center"
+                android:text="당신에게 사랑받는 것이\n 자랑스럽습니다."
+                android:textColor="#000000"
+                android:textSize="35sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="둥글고 넓은 접시 모양의 꽃으로, 여름에 핀다."
-                android:textSize="30sp"
-                android:textColor="#000000"/>
-        </ScrollView>
+                android:layout_marginBottom="20dp"
+                android:text="꽃이 질 때, 꽃잎 하나씩 떨어지지 않고 한송이씩 떨어지는 것이 특징이다."
+                android:textColor="#000000"
+                android:textSize="28sp" />
 
-    </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
 
 </FrameLayout>
