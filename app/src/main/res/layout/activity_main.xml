@@ -32,16 +32,16 @@
             android:layout_alignParentBottom="true">
 
             <Button
-                android:id="@+id/btn_home"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginRight="85dp"
-                android:background="@drawable/home"/>
-            <Button
                 android:id="@+id/btn_cate"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
+                android:layout_marginRight="85dp"
                 android:background="@drawable/cate_flat"/>
+            <Button
+                android:id="@+id/btn_home"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/home"/>
             <Button
                 android:id="@+id/btn_bag"
                 android:layout_width="30dp"
