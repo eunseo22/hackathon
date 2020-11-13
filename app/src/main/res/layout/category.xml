@@ -35,7 +35,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/category_background">
+        android:background="@drawable/category_final">
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -48,33 +48,28 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="43dp"
-                android:layout_marginTop="175dp"
-                android:background="@drawable/cate_love" />
+                android:layout_marginTop="175dp" />
             <Button
                 android:id="@+id/btn_cate_thanks"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="175dp"
-                android:layout_marginLeft="110dp"
-                android:background="@drawable/cate_thanks"/>
+                android:layout_marginLeft="110dp"/>
             <Button
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginTop="335dp"
-                android:layout_marginLeft="35dp"
-                android:background="@drawable/cate_cong"/>
-            <Button
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginTop="350dp"
-                android:layout_marginLeft="83dp"
-                android:background="@drawable/cate_sorry"/>
+                android:layout_marginTop="175dp"
+                android:layout_marginLeft="180dp"/>
             <Button
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="350dp"
-                android:layout_marginLeft="140dp"
-                android:background="@drawable/cate_esc"/>
+                android:layout_marginLeft="83dp"/>
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="350dp"
+                android:layout_marginLeft="140dp"/>
 
         </FrameLayout>
 
